@@ -3,27 +3,29 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <header className="bg-zinc-900 md:sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="title-font font-medium text-white mb-4 md:mb-0">
-          <a href="#about" className="ml-3 text-xl">
-            André Custódio
-          </a>
+    <header className="sticky top-0 z-30 border-b border-white border-opacity-10 bg-black bg-opacity-95">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between px-5 py-4 sm:flex-row">
+        <a href="#about" className="text-lg font-semibold tracking-wide text-white">
+          Andre Custodio
         </a>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="https://www.github.com/ascustodiowebdev" className="mr-5 hover:text-white">
-            My github
+        <nav className="mt-3 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-300 sm:mt-0">
+          <a href="#projects" className="hover:text-white">
+            Projects
           </a>
-          <a href="#skills" className="mr-5 hover:text-white">
-            My tech stack
+          <a href="#stack" className="hover:text-white">
+            Stack
+          </a>
+          <a href="https://github.com/ascustodiowebdev" className="hover:text-white">
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/andrecustodio89/"
+            className="inline-flex items-center rounded bg-green-600 px-3 py-2 font-medium text-white hover:bg-green-500"
+          >
+            LinkedIn
+            <ArrowRightIcon className="ml-2 h-4 w-4" />
           </a>
         </nav>
-        <a
-          href="https://www.linkedin.com/in/andrecustodio89/"
-          className="inline-flex items-center bg-zinc-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-          Contact me
-          <ArrowRightIcon className="w-4 h-4 ml-1" />
-        </a>
       </div>
     </header>
   );

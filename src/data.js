@@ -1,78 +1,73 @@
 export const projects = [
   {
-    title: "My Park",
-    subtitle: "An app to help you park around Porto, Portugal",
+    title: "Fishmap",
+    subtitle: "Mobile-first fishing logbook and navigation assistant",
+    status: "Active product build",
     description:
-      "This app was developed with Ruby on Rails, ES6 Javascript and StimulusJS. It was a 2 week project with two colleagues from LeWagon. Huge shoutout to them, you know who you are!",
-    image: "./mypark1.gif",
-    link: "https://mypark-app.herokuapp.com/",
+      "A Laravel 12 and React/TypeScript app for anglers to save fish spots, record routes, and get real-time GPS guidance back to a saved route line.",
+    impact:
+      "Built auth, bilingual EN/PT flows, admin moderation, route recording, map guidance, Android packaging with Capacitor, and geolocation workflows.",
+    stack: ["Laravel 12", "Inertia", "React 19", "TypeScript", "Leaflet", "Capacitor"],
+    image: "./project-fishmap.png",
+    imageFit: "contain",
+    link: "https://github.com/ascustodiowebdev/fishmap",
   },
   {
-    title: "My Park",
-    subtitle: "An app to help you park around Porto, Portugal",
+    title: "Naruva",
+    subtitle: "Commerce platform with operational backend features",
+    status: "Private client/product work",
     description:
-      "This app was developed with Ruby on Rails, ES6 Javascript and StimulusJS. It was a 2 week project with two colleagues from LeWagon. Huge shoutout to them, you know who you are!",
-    image: "./mypark2.gif",
-    link: "https://mypark-app.herokuapp.com/",
+      "A Laravel and React commerce build focused on product operations, payment flows, authentication, and admin-friendly catalogue management.",
+    impact:
+      "Implemented Google login with Socialite, Ifthenpay payment integration, registration controls, bundles, stock sync, and production-oriented admin flows.",
+    stack: ["Laravel 12", "React", "TypeScript", "Inertia", "Tailwind", "Ifthenpay"],
+    image: "./project-naruva.png",
+    privateRepo: true,
+    link: "https://github.com/ascustodiowebdev/naruva",
   },
   {
-    title: "My Pet",
-    subtitle: "A 1 week project mock app 'airbnb style' take to rent pets ",
+    title: "Store Template",
+    subtitle: "Reusable Laravel/Inertia ecommerce foundation",
+    status: "Private reusable product base",
     description:
-      "This app was developed with Ruby on Rails, HTML, Bootstrap and SCSS. It was a 1 week project with two colleagues from LeWagon. Huge shoutout to them, you know who you are!",
-    image: "./mp1.png",
-    link: "https://mypet-app.herokuapp.com/",
+      "A reusable online store template designed to be cloned and adapted for new brands without starting the same ecommerce plumbing from zero.",
+    impact:
+      "Prepared the Laravel 12, Inertia and React base with auth, payment integration, admin setup, seeded demo data, production checklist, and reusable store configuration.",
+    stack: ["Laravel 12", "Inertia", "React 19", "TypeScript", "Payments", "Admin UX"],
+    image: "./project-store-template.png",
+    privateRepo: true,
+    link: "https://github.com/ascustodiowebdev/store-template",
   },
-  {
-    title: "My Pet",
-    subtitle: "A 1 week project mock app 'airbnb style' take to rent pets ",
-    description:
-      "This app was developed with Ruby on Rails, HTML, Bootstrap and SCSS. It was a 1 week project with two colleagues from LeWagon. Huge shoutout to them, you know who you are!",
-    image: "./mp2.png",
-    link: "https://mypet-app.herokuapp.com/",
-  },
-  {
-    title: "Teacatffé",
-    subtitle: "A landing page for a cat tea house that offers remote work booths, cozy atmosphere and stress free environment ",
-    description:
-      "This app was built with AngularJS with the goal of learning the framework it is a fictitious website.",
-    image: "./tea3.png",
-    link: "https://teacatffe.netlify.app/",
-  },
-  {
-    title: "Teacatffé",
-    subtitle: "A landing page for a cat tea house that offers remote work booths, cozy atmosphere and stress free environment ",
-    description:
-      "This app was built with AngularJS with the goal of learning the framework it is a fictitious website.",
-    image: "./tea2.png",
-    link: "https://teacatffe.netlify.app/",
-  },
-  {
-    title: "Pokedex",
-    subtitle: "A small PHP project consuming the PokeAPI to build a pokedex! ",
-    description:
-      "As i taught myself PHP, i decided to build this app to consume the PokeAPI, using basic PHP and Javascript.",
-    image: "./poke1.png",
-    link: "https://phpokedex-3708bc56aeb7.herokuapp.com/",
-  },
-  {
-    title: "Pokedex",
-    subtitle: "A small PHP project consuming the PokeAPI to build a pokedex! ",
-    description:
-      "As i taught myself PHP, i decided to build this app to consume the PokeAPI, using basic PHP and Javascript.",
-    image: "./poke2.png",
-    link: "https://phpokedex-3708bc56aeb7.herokuapp.com/",
-  }
 ];
 
-export const testimonials = [
+export const stackGroups = [
+  {
+    title: "Backend",
+    items: ["PHP 8.2", "Laravel 12", "Ruby on Rails", "RESTful APIs", "Auth", "Queues"],
+  },
+  {
+    title: "Frontend",
+    items: ["React", "TypeScript", "Inertia.js", "Tailwind CSS", "Vite", "Radix UI"],
+  },
+  {
+    title: "Product Systems",
+    items: ["Payments", "Maps/GPS", "Admin panels", "Role controls", "Bilingual UI", "Android builds"],
+  },
+  {
+    title: "Workflow",
+    items: ["Git/GitHub", "Testing", "CI awareness", "AI-assisted development", "API integrations"],
+  },
 ];
 
-export const skills = [
-  "JavaScript, React",
-  "Learning on PHP",
-  "Ruby on Rails",
-  "HTML/CSS/SCSS",
-  "Git/Github",
-  "OOP / MVC"
+export const focusAreas = [
+  "Backend-heavy product engineering",
+  "AI-assisted development and automation",
+  "Laravel, APIs, auth, payments, admin systems",
+  "Full-stack delivery when the product needs it",
+];
+
+export const experience = [
+  "From bootcamp projects to real product work with Laravel, React, mobile packaging, maps, payments, and admin tooling.",
+  "Comfortable moving between backend decisions, UI implementation, debugging, and deployment details.",
+  "Currently sharpening backend and AI workflows while staying pragmatic enough to ship full-stack features end to end.",
 ];

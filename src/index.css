@@ -1,3 +1,140 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+}
+
+#projects,
+#stack,
+#contact {
+  scroll-margin-top: 84px;
+}
+
+::selection {
+  background: rgba(74, 222, 128, 0.35);
+  color: #fff;
+}
+
+.hero-image {
+  animation: hero-drift 18s ease-in-out infinite alternate;
+}
+
+.project-card {
+  position: relative;
+  transform: translateY(0);
+  animation: card-rise 700ms ease-out both;
+}
+
+.project-card:nth-child(2) {
+  animation-delay: 90ms;
+}
+
+.project-card:nth-child(3) {
+  animation-delay: 180ms;
+}
+
+.project-card::after {
+  background: linear-gradient(135deg, rgba(74, 222, 128, 0.16), transparent 38%);
+  content: "";
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 260ms ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
+  transform: translateY(-6px);
+}
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
+.project-image-wrap {
+  aspect-ratio: 16 / 10;
+  background: #020617;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image {
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.01);
+  transition: transform 700ms ease, filter 700ms ease;
+  width: 100%;
+}
+
+.project-image-contain {
+  object-fit: contain;
+  padding: 0.45rem;
+}
+
+.project-card:hover .project-image {
+  filter: saturate(1.08) contrast(1.05);
+  transform: scale(1.06);
+}
+
+.project-card:hover .project-image-contain {
+  transform: scale(1.035);
+}
+
+.project-image-sheen {
+  background: linear-gradient(105deg, transparent 20%, rgba(255, 255, 255, 0.14) 46%, transparent 70%);
+  height: 100%;
+  left: -80%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: skewX(-12deg);
+  transition: left 850ms ease;
+  width: 58%;
+}
+
+.project-card:hover .project-image-sheen {
+  left: 125%;
+}
+
+@keyframes hero-drift {
+  from {
+    transform: scale(1.02) translate3d(-8px, -4px, 0);
+  }
+  to {
+    transform: scale(1.08) translate3d(10px, 6px, 0);
+  }
+}
+
+@keyframes card-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-image,
+  .project-card {
+    animation: none;
+  }
+
+  .project-card,
+  .project-card:hover,
+  .project-image,
+  .project-card:hover .project-image,
+  .project-image-sheen {
+    transform: none;
+    transition: none;
+  }
+}
