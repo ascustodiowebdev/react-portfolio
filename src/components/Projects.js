@@ -12,7 +12,7 @@ export default function Projects() {
             Selected projects
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
-            Product-focused builds across maps, commerce, and AI-ready systems.
+            Product-focused builds across trading, maps, commerce, and AI-ready systems.
           </h2>
           <p className="mt-5 text-lg leading-8 text-gray-300">
             A focused selection of recent full-stack products, with stronger emphasis
@@ -21,7 +21,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {projects.map((project) => (
             <article
               key={project.title}
@@ -34,7 +34,7 @@ export default function Projects() {
                   className={`project-image ${project.imageFit === "contain" ? "project-image-contain" : ""}`}
                 />
                 <div className="project-image-sheen" />
-                <span className="absolute left-4 top-4 rounded bg-black bg-opacity-70 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-green-200">
+                <span className="absolute right-4 top-4 rounded bg-black bg-opacity-70 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-green-200">
                   {project.privateRepo ? "Private build" : "Public repo"}
                 </span>
               </div>

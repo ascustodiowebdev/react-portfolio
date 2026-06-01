@@ -1,5 +1,17 @@
 export const projects = [
   {
+    title: "Crypto Trader Local",
+    subtitle: "Local crypto trading dashboard and guarded bot",
+    status: "Public portfolio project",
+    description:
+      "A local Node.js dashboard and bot that reads live Binance Spot market data, scores opportunities, tracks wallet state, and explains the buy plan before acting.",
+    impact:
+      "Built behaviour modes, risk controls, stop-loss and trailing-stop logic, break-even calculations after fees, Binance minimum order protection, local persistence, and decision-engine tests.",
+    stack: ["Node.js", "JavaScript", "HTML/CSS", "Binance Spot API", "Risk controls", "Node test runner"],
+    image: "./project-crypto-trader.png",
+    link: "https://github.com/ascustodiowebdev/ctl",
+  },
+  {
     title: "Fishmap",
     subtitle: "Mobile-first fishing logbook and navigation assistant",
     status: "Active product build",
@@ -43,7 +55,7 @@ export const projects = [
 export const stackGroups = [
   {
     title: "Backend",
-    items: ["PHP 8.2", "Laravel 12", "Ruby on Rails", "RESTful APIs", "Auth", "Queues"],
+    items: ["PHP 8.2", "Laravel 12", "Node.js", "Ruby on Rails", "RESTful APIs", "Auth"],
   },
   {
     title: "Frontend",
@@ -51,7 +63,7 @@ export const stackGroups = [
   },
   {
     title: "Product Systems",
-    items: ["Payments", "Maps/GPS", "Admin panels", "Role controls", "Bilingual UI", "Android builds"],
+    items: ["Payments", "Maps/GPS", "Trading bots", "Admin panels", "Role controls", "Android builds"],
   },
   {
     title: "Workflow",
